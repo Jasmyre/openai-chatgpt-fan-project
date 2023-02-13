@@ -1,0 +1,32 @@
+.bot-btn-div {
+  width: 100%;
+  height: 50px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+
+.bot-pfp-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bot-info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.bot-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+

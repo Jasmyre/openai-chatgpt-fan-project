@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>bot-v-1-0-0</title>
-    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Assets/css/all.css">
     <script src="index.js" defer></script>
@@ -212,12 +212,35 @@
           </div>
           <div class="add-bot-div hidden">
             <div class="addBotDes">
-              <div class="addBot hidden" onclick="/*window.location = './addBot/addBot.html'*/">
+              <input type="checkbox" id="add-bot-input" class="add-bot-input" >
+              <label for="add-bot-input" class="addBot hidden" onclick="/*window.location = './addBot/addBot.html'*/">
                 <i class="fa-solid fa-circle-plus addBotIcon"></i>
-              </div>
+              </label>
             </div>
           </div>
         </div>
+      </div>
+      <div class="pop-up-add-bot-div">
+        <label for="add-bot-input" class="pop-up-inner-add-bot-div">
+        </label>
+          <div class="inner-add-bot">
+            <div>
+              <div class="add-bot-pfp-div">
+                <div>
+                <img src="Assets/img/pfp.png" class="add-bot-pfp-preview" id="add-bot-pfp-preview">
+                </div>
+                <input type="file" id="add-bot-pfp-preview-input" class="add-bot-pfp-preview-input">
+                <label for="add-bot-pfp-preview-input" class="add-bot-pfp-preview-input-btn">Change-Pfp</label>
+              </div>
+              <div class="add-bot-form-div">
+                <form class="add-bot-form" id="add-bot-form">
+                  
+                  <textarea id="add-bot-form-name" class="add-bot-form-name" placeholder="Name" autocomplete="off" autofill="off"></textarea>
+                  
+                </form>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </body>
