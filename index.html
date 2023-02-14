@@ -8,7 +8,7 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <div class="app">
+    <div class="app" id="app">
       <header>
         <div class="title">
           <label><samp>Open-AI-Bot</samp></label>
@@ -72,19 +72,6 @@
               <div class="bot-info-div">
                 <label class="bot-name">Andrei Lanuza</label>
               </div>
-            </div><!--
-            <div class="bot-btn-div hidden">
-              <img class="bot-pfp-btn" src="Assets/Img/pfp.png">
-              <div class="bot-info-div">
-                <label class="bot-name">Andrei Lanuza</label>
-              </div>
-            </div>
-            
-            <div class="bot-btn-div hidden">
-              <img class="bot-pfp-btn" src="Assets/Img/pfp.png">
-              <div class="bot-info-div">
-                <label class="bot-name">Andrei Lanuza</label>
-              </div>
             </div>
             <div class="bot-btn-div hidden">
               <img class="bot-pfp-btn" src="Assets/Img/pfp.png">
@@ -208,7 +195,20 @@
               <div class="bot-info-div">
                 <label class="bot-name">Andrei Lanuza</label>
               </div>
-            </div>-->
+            </div>
+            
+            <div class="bot-btn-div hidden">
+              <img class="bot-pfp-btn" src="Assets/Img/pfp.png">
+              <div class="bot-info-div">
+                <label class="bot-name">Andrei Lanuza</label>
+              </div>
+            </div>
+            <div class="bot-btn-div hidden">
+              <img class="bot-pfp-btn" src="Assets/Img/pfp.png">
+              <div class="bot-info-div">
+                <label class="bot-name">Andrei Lanuza</label>
+              </div>
+            </div>
           </div>
           <div class="add-bot-div hidden">
             <div class="addBotDes">
@@ -228,17 +228,18 @@
               <div class="add-bot-pfp-div">
                 <div>
                 <img src="Assets/img/pfp.png" class="add-bot-pfp-preview" id="add-bot-pfp-preview">
+                <label for="add-bot-pfp-preview-input" class="add-bot-pfp-preview-input-btn">Change-Pfp</label>
                 </div>
                 <input type="file" id="add-bot-pfp-preview-input" class="add-bot-pfp-preview-input">
-                <label for="add-bot-pfp-preview-input" class="add-bot-pfp-preview-input-btn">Change-Pfp</label>
               </div>
               <div class="add-bot-form-div">
+                <samp>
                 <form class="add-bot-form" id="add-bot-form">
                   
-                  <textarea id="add-bot-form-name" class="add-bot-form-name" placeholder="Name" autocomplete="off" autofill="off"></textarea>
-                  <input type="text">
+                  <textarea placeholder="NAME" id="add-bot-form-name" class="add-bot-form-name textarea" oninput="this.value=this.value.replace(/\r?\n/g,'');"></textarea>
                   
                 </form>
+                </samp>
               </div>
             </div>
           </div>

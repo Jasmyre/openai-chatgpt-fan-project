@@ -737,32 +737,12 @@ li .nav-li-style:hover {
   
 }
 
-.add-bot-pfp-preview-input {
-  
-  display: none;
-  position: free;
-  top: -200%;
-  
-}
-
 .add-bot-pfp-div div {
   
   display: grid;
   place-content: center;
   width: 100%;
   height: max-content;
-  
-}
-
-.add-bot-pfp-preview {
-  
-  height: 100px;
-  width: 100px;
-  //position: relative;
-  top: 50%;
-  left: 50%;
-  //transform: translate(-50%, -50%);
-  border-radius: 100%;
   
 }
 
@@ -782,37 +762,94 @@ li .nav-li-style:hover {
   
 }
 
-.add-bot-form-name {
-  
-  width: 80%;
-  font-size: 12px;
-  min-height: 12px;
-  max-height: 12px;
+.textarea {
+    
+  resize: none;
+  font-size: 16px;
+  transition: all 1s;
+  border-style: hidden;
   outline: none;
-  padding: .5rem;
-  font-style: normal;
-  background-color: #0000;
-  color: #eee;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  caret-color: black;
+  //padding: 0px 2px 0px 2px;
+  //border-style: groove;
+  border-radius: 5px;
+  font-family: monospace;
+  height: 45px;
+  line-height: 53.3px;
   text-align: center;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  border-bottom: solid 2px white;
-  transition: all .5s;
-  
+  color: cyan;
+  background: transparent;
+  caret-color: white;
+  //text-shadow: 0 0 5px #fff;
+  border-bottom: white solid 1px;
+  margin: .5rem 0;
+    
 }
 
-.add-bot-form-name:focus {
+.textarea:focus {
   
-  border-bottom: solid 2px cyan;
-  background-color: #eee;
+  border-bottom: 1px solid cyan;
+  //text-shadow: 0 0 5px #000;
+  background: #eee;
   color: #000;
-  border-radius: 5px 5px 0 0;
+  caret-color: #000;
   
 }
 
-@media (min-width: 800px) {
+.inner-add-bot div {
+  
+  display: grid;
+  place-content: center;
+  position: relative;
+  height: 100%;
+  
+}
+
+.inner-add-bot div * {
+  
+  display: inline-block;
+  
+}
+
+.add-bot-pfp-preview {
+  
+  height: 100px;
+  width: 100px;
+  //position: relative;
+  top: 50%;
+  left: 50%;
+  //transform: translate(-50%, -50%);
+  border-radius: 100%;
+  
+}
+
+.add-bot-pfp-div {
+  
+  //background: cyan;
+  display: block;
+  
+}
+
+.add-bot-pfp-div div {
+  
+  min-width: 100%;
+  background: #0000;
+  display: block;
+  
+}
+
+.add-bot-pfp-preview-input {
+  
+  display: none;
+  position: absolute;
+  top: -200%;
+  
+}
+
+@media (min-width: 850px) {
   
   * {
     
@@ -902,9 +939,11 @@ li .nav-li-style:hover {
     
   }
   
-  .add-bot-form-name {
+  .textarea {
     
-    font-size: 16px;
+    font-size: 20px;
+    height: 49px;
+    line-height: 57.3;
     
   }
   

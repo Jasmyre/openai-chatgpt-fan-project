@@ -20,7 +20,6 @@ document.querySelector('.add-bot-input').addEventListener('change', function() {
   
   if (this.checked) {
     popUp.style.display = 'block';
-    //document.querySelectorAll(".pop-up-inner-add-bot-div").style.display = 'block';
     document.querySelectorAll(".pop-up-inner-add-bot-div").style.backgroundColor = "#0009"
   } else {
     popUp.style.display = 'none';
@@ -28,3 +27,20 @@ document.querySelector('.add-bot-input').addEventListener('change', function() {
     document.querySelectorAll(".pop-up-inner-add-bot-div").style.backgroundColor = "#0000"
   }
 });
+
+function openFullscreen() {
+  var elem = document.getElementById("app");
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+window.addEventListener("load", () => {
+  
+  setTimeout( openFullscreen , 1000);
+  
+})
