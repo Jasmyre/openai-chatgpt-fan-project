@@ -1,0 +1,61 @@
+
+
+<style>
+  
+  label {
+    /*
+    padding: .5rem;
+    border-style: groove;
+    width: 50%;
+    */
+  }
+  
+  .textarea {
+    
+    resize: none;
+    font-size: 16px;
+    transition: all 2s;
+    background-color: #0000;
+    border-style: hidden;
+    outline: none;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    caret-color: black;
+    //padding: 0px 2px 0px 2px;
+    border-style: groove;
+    border-radius: 5px;
+    font-family: monospace;
+    height: 45px;
+    line-height: 53.3px;
+    text-align: center;
+    
+  }
+  
+  html {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+  }
+  
+</style>
+
+<textarea class="textarea" oninput="this.value=this.value.replace(/\r?\n/g,'');"></textarea>
+
+<script>
+/*
+  const textarea = document.querySelector(".textarea");
+  textarea.addEventListener("input", function() {
+    textarea.scrollLeft = textarea.scrollWidth;
+  });
+  */
+  //<input type="text" onkeydown="if(event.keyCode == 13) return false;">
+  
+  //if(event.keyCode == 13) return false;
+  
+  //<input type="text" onkeyup="if(event.key === 'Enter') event.preventDefault();" />
+  
+  //onkeyup="if(event.key === 'Enter') event.preventDefault()
+  
+  
+</script>
